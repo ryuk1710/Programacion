@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="283.0" prefWidth="420.0" stylesheets="@css/setPerfil.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_programadores.SetController">
+   <children>
+      <VBox alignment="TOP_RIGHT" layoutX="116.0" prefHeight="283.0" prefWidth="312.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="54.0" prefWidth="239.0" styleClass="titulo" text="Editar Perfil" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="300.0">
+               <children>
+                  <Label text="Nombre de Usuario: " />
+                  <TextField prefHeight="25.0" prefWidth="140.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="300.0">
+               <children>
+                  <Label text="Contraseña:" />
+                  <PasswordField prefHeight="25.0" prefWidth="140.0">
+                     <HBox.margin>
+                        <Insets left="55.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="300.0" spacing="10.0">
+               <children>
+                  <Label text="Género:" />
+                  <RadioButton mnemonicParsing="false" text="Mujer" />
+                  <RadioButton mnemonicParsing="false" text="Hombre" />
+                  <RadioButton mnemonicParsing="false" text="Otro" />
+               </children>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="300.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="160.0" text="Lenguaje de Programación:" />
+                  <ComboBox prefHeight="25.0" prefWidth="120.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="28.0" prefWidth="300.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Guardar Cambios">
+                     <graphic>
+                        <ImageView fitHeight="13.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/carpeta.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" styleClass="boton-peligro" text="Cancelar">
+                     <HBox.margin>
+                        <Insets left="30.0" right="5.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@imagenes/x.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="284.0" prefWidth="110.0">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/lapiz.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="40.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <ImageView fitHeight="121.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/icono_loggin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="111.0" pickOnBounds="true">
+               <image>
+                  <Image url="@imagenes/fondo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

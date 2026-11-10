@@ -5,7 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="421.0" prefWidth="340.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_programadores.HelloController">
+<VBox alignment="CENTER" prefHeight="421.0" prefWidth="340.0" spacing="20.0" stylesheets="@css/hello.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto_programadores.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -16,7 +16,7 @@
                <Image url="@imagenes/imagen1.png" />
             </image>
          </ImageView>
-         <Label prefHeight="61.0" prefWidth="185.0" text="Comunidad de Programadores">
+         <Label prefHeight="61.0" prefWidth="224.0" text="Comunidad de Programadores">
             <HBox.margin>
                <Insets left="40.0" />
             </HBox.margin></Label>
@@ -38,7 +38,10 @@
             <children>
             
                 <Label fx:id="welcomeText" alignment="TOP_LEFT" prefHeight="17.0" prefWidth="95.0" text="Usuario:" />
-               <TextField />
+               <TextField>
+                  <HBox.margin>
+                     <Insets left="10.0" />
+                  </HBox.margin></TextField>
             </children></HBox>
       </children>
    </VBox>

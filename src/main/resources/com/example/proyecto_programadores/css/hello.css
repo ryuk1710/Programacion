@@ -1,0 +1,54 @@
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(to bottom right, #eaf6fd, #ffffff);
+}
+.label { -fx-text-fill: #1f3a52; }
+.titulo { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #0b5f9e; }
+
+.button {
+    -fx-background-color: linear-gradient(#1fb6ff, #0b7fc7);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 6, 0, 0, 2);
+}
+.button:hover { -fx-background-color: linear-gradient(#4cc9ff, #1590de); }
+.button:pressed { -fx-background-color: #0b6aa8; -fx-translate-y: 1; }
+
+.boton-peligro { -fx-background-color: linear-gradient(#ff6b6b, #d63031); }
+.boton-peligro:hover { -fx-background-color: linear-gradient(#ff8787, #e04545); }
+
+.combo-box-base {
+    -fx-background-color: white;
+    -fx-border-color: #b8d4e8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.combo-box-base:focused { -fx-border-color: #00a8e8; }
+.combo-box-base .arrow-button { -fx-background-color: transparent; }
+.combo-box-base .arrow { -fx-background-color: #0b7fc7; }
+.combo-box-popup .list-view .list-cell:filled:hover,
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #1fb6ff;
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #b8d4e8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.table-view .column-header-background { -fx-background-color: #0b7fc7; -fx-background-radius: 8 8 0 0; }
+.table-view .column-header, .table-view .filler { -fx-background-color: transparent; -fx-border-color: transparent; }
+.table-view .column-header .label { -fx-text-fill: white; -fx-font-weight: bold; }
+.table-row-cell { -fx-background-color: white; -fx-cell-size: 34px; }
+.table-row-cell:odd { -fx-background-color: #f1f8fd; }
+.table-row-cell:hover { -fx-background-color: #d9f1ff; }
+.table-row-cell:selected { -fx-background-color: #1fb6ff; }
+.table-row-cell:selected .table-cell { -fx-text-fill: white; }
+.table-cell { -fx-text-fill: #1f3a52; -fx-alignment: CENTER_LEFT; -fx-padding: 0 10; }
+.table-view .placeholder .label { -fx-text-fill: #8aa6bb; -fx-font-style: italic; }
